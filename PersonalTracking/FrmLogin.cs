@@ -16,5 +16,15 @@ namespace PersonalTracking
         {
             InitializeComponent();
         }
+
+        private void txtUserNo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUserNo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = General.IsNumber(e);
+        }
     }
 }
